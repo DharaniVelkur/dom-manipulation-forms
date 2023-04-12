@@ -1,0 +1,30 @@
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 35vw;
+}
+form input{
+    padding: 0.7em 1em;
+}
+form span{
+    padding: 0.6em 1em;
+    font-size: large;
+}
+form >button{
+    padding: 1.1em;
+    margin: 2em 2em;
+    cursor: pointer;
+}
+ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    text-align: center;
+    overflow-x: scroll;
+    overflow-y: scroll;
+}
+ul li{
+    border: 1px solid black;
+}

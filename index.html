@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/index.css">
+    <title>Dom Manipulation with forms </title>
+</head>
+<body>
+    <div class="container">
+    <h1 id="title">Survey Form</h1>
+    <p id="description"> Form takes all your information and note that it is not shared to anyone.</p>
+    <div class="form-group">
+    <form action="#" id="form" method="get" >
+        <span>First Name :</span>
+        <input type="text" id="first-name" placeholder="Enter your first name" required>
+        <span>Last Name :</span>
+        <input type="text" id="last-name" placeholder="Enter your last name" required>
+        <span>Address :</span>
+        <textarea rows="2" id="address" required></textarea>
+        <span>Pincode :</span>
+        <input type="text" id="pincode" placeholder="Enter your pincode" required validate>
+        <span>Gender :</span>
+        <select id="gender"required>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Transgender">Transgender</option>
+            <option value="not specify">Not to specify</option>
+        </select>
+        <span>Food :</span>
+        <select id="food"  required>
+            <option value="Biryani">Biryani</option>
+            <option value="Icecream">Icecream</option>
+            <option value="Paani puri">Paani Puri</option>
+            <option value="Dosa">Dosa</option>
+            <option value="South Indian Meal">South Indian meal</option>
+            <option value="North food">North Indian food</option>
+        </select>
+        <span >State :</span>
+        <input type="text" id="state" placeholder="Please enter your state" required>
+        <span >Country :</span>
+        <input type="text" id="country" placeholder="Please enter your country" required>
+        <button type="submit" id="submit">Submit</button>
+    </form>
+</div>
+
+    <ul id="data">
+        <li>First Name</li>
+        <li>Last Name</li>
+        <li>Address</li>
+        <li>Pincode</li>
+        <li>Gender</li>
+        <li>Food</li>
+        <li>State</li>
+        <li>Country</li>
+    </ul>
+</div>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+    <script src="/index.js"></script>
+</body>
+</html>
